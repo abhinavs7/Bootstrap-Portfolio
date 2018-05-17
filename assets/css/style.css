@@ -27,7 +27,7 @@ header{
 
 h1{
     color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     font-weight: 600;
     background: #ffffff;
     padding:20px 0 10px 0;
@@ -73,7 +73,7 @@ body {
 }
 .container{
     background: #ffffff;
-    width:75% ;
+    width:960px ;
     margin:20px auto 40px auto;
     border-top: 1px solid #dddddd ;
     border-bottom: 1px solid #dddddd ;
@@ -99,6 +99,9 @@ div.content {
     margin-left: 10px;
     position: relative;
     bottom:100px;
+    overflow: hidden;
+    height: 60px;
+    opacity: .85;
 
 
 }
@@ -115,6 +118,9 @@ div h4{
     text-align: center;
     font-weight: normal;
     font-family: 'Georgia', Times, Times New Roman, serif;
+    position: relative;
+    bottom:100px;
+    height: 60px;
 
 }
 form{
@@ -191,7 +197,7 @@ li {
     position: relative;
    
 } */
-a:after {
+a.nav-link:after {
     content: " | ";
     color: #cccccc;
     background: #ffffff;
@@ -322,10 +328,42 @@ a.social:after{
 }
 div.footersocial{
     padding-bottom: 20px;
-    height:32px;
-    size: unset;
-    width:15%;
+    height:70px;
+    width:12%;
     float:right;
     background: #666666;
 
+}
+div.paddedrowcontact{
+    height: 200px;
+    background-image: url("../images/redox_01.png");
+
+}
+div.paddedrowindex{
+    height: 50px;
+    background-image: url("../images/redox_01.png");
+
+}
+div.paddedrowport{
+    height: 50px;
+    background-image: url("../images/redox_01.png");
+
+}
+
+a.portfoliolinks{
+
+    position: absolute;
+    background: #4aaaa5;
+    color: #f1f1f1;
+    text-align: center;
+    font-weight: normal;
+    width: 250px;
+    margin: 2px auto 20px auto;
+    overflow: hidden;
+    opacity:1.0;
+
+}
+a.portfoliolinks:hover{
+    background: rgb(19, 191, 180);
+    color:black;
 }
