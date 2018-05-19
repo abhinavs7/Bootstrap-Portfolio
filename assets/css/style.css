@@ -5,29 +5,29 @@
 }
 header{
     width:100% ;
-    height:70px;
+    height:12%;
     clear:both;
     background: #ffffff;
     border-bottom: #cccccc solid 1px;
     color: #777777;
     overflow: hidden;
 }
-/* 
+
 .topheader{
     position: absolute;
     top:0px;
     left:12.5%;
-    height:9.5%;
+    height:11%;
     width:27% ;
     background: #4aaaa5;
     border-bottom: #cccccc solid 1px;
     overflow: hidden   
 
-} */
+} 
 
 h1{
     color: #4aaaa5;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
     background: #ffffff;
     padding:20px 0 10px 0;
@@ -181,7 +181,7 @@ hr {
     height:2px;
     background-color: #dddddd;
 }
-/* ul{
+ul{
     margin: 0 -15px 0 auto;
     padding: 20px 0px 20px 0px ;
     overflow: hidden;
@@ -196,37 +196,36 @@ li {
     overflow: hidden;
     position: relative;
    
-} */
-a.nav-link:after {
+} 
+a.navlink:after {
     content: " | ";
     color: #cccccc;
     background: #ffffff;
-    padding-left: 10px
+    padding-left: 10px;
+    overflow: hidden;
     }
 
 
-a {
-    display:  inline;
-    color: #cccccc;
-    text-align: center;
-    padding: 20px 16px;
-    background: #ffffff;
-    text-decoration:none;
-    
-    
-}
-a.navbar-brand{
-    background: #4aaaa5;
-    color:#ffffff;
-    text-align: center;
-    margin:0px 0px 20px 0px;
-    height: 70px;   
-    padding:10px 0 10px 0;
-}
-a.nav-item:last-child:after{
 
-content: none
-}
+    li a {
+        display:  inline;
+        color: #cccccc;
+        text-align: center;
+        padding: 20px 16px;
+        background: #ffffff;
+        text-decoration:none;
+        
+        
+    }
+    
+    li a:last-child:after{
+    
+    content: none
+    }
+
+    li a:hover{
+    color:gray;
+        }
 footer{
     background: #666666;
     text-align: center;
@@ -327,11 +326,19 @@ a.social:after{
     content: none;
 }
 div.footersocial{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     height:70px;
     width:12%;
     float:right;
     background: #666666;
+    position: relative;
+    top:-35px;
+
+}
+p.footerpara{
+    background: #666666;
+    font-size: small;
+
 
 }
 div.paddedrowcontact{
@@ -366,4 +373,149 @@ a.portfoliolinks{
 a.portfoliolinks:hover{
     background: rgb(19, 191, 180);
     color:black;
+}
+
+@media (max-width: 1213px) and (min-width: 768px) {
+    h1 {
+        font-size: x-large;
+        align-content: center;
+      }
+
+}
+@media (max-width: 980px) and (min-width: 768px) {
+    h1 {
+      font-size: x-large;
+    }
+    ul{
+        margin: 0 auto 0 auto;
+        padding: 20px 0px 20px 0px ;
+        overflow: hidden;
+        list-style-type: none;
+        background: #ffffff;
+        width: 75%;
+        height: 80px;   
+    
+    }
+    .container{
+        width:80%;
+    }
+    h1.top{
+        min-height: 70px;
+        font-size: x-large;
+        padding-top: 8px;
+
+    }
+    div.topheader{
+        width:20%;
+        min-height: 70px;
+        margin-left: 5px;
+
+    }
+}
+@media (max-width: 767px) and (min-width: 641px) {
+    h1 {
+      font-size: x-large;
+
+    }
+    ul{
+        text-align: center;
+        padding-left: -200px;
+    }
+    a.navlink{
+        position: inherit;       
+        }
+
+    .topnav{
+
+        width:100%;
+         }
+         .container{
+            width:70%;
+            min-width: 60%;
+            position: relative;
+            
+        }
+    button{
+        min-width: 100px; 
+        }
+        header{
+            width:100%;
+            overflow: hidden;
+
+        }
+        h1.top{
+            min-height: 70px;
+            font-size: medium;
+            padding-top: 20px;
+
+        }
+        div.topheader{
+            width:20%;
+            min-height: 70px;
+            margin-left: 20px;
+
+        }
+        ul{
+            margin-left: 80px;
+        }
+        
+
+}
+@media (max-width: 640px) and (min-width: 320px) {
+    h1 {
+      font-size: large;
+
+    }
+    .container{
+        width:60%;
+        min-width: 60%;
+        position: relative;
+        top: 130px;
+    }
+    button{
+        min-width: 80px; 
+        }
+
+        .topnav{
+        position: absolute;   
+        top:70px;
+        width:100%;
+         }
+         header{
+             width:100%;
+             background: #4aaaa5;
+
+         }
+         h1.top{
+             width:100%;
+             margin: 10px 20px 10px -10px;
+
+         }
+         div.topheader{
+             position: absolute;
+             left:0;
+            width:100%;
+            border-bottom: #4aaaa5 solid 1px;
+            overflow: hidden;
+            align-content: center;
+            height: 70px;   
+
+
+         }
+         .col-md-12{
+            margin: 10px auto 10px auto;
+
+             min-width:50%;
+         }
+         ul{
+            margin: 0 auto 0 auto;
+            padding-right: 13%;
+            overflow: hidden;
+            list-style-type: none;
+            background: #ffffff;
+            width: 75%;
+            height: 70px;   
+        
+        }
+
 }
