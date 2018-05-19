@@ -1,1 +1,1 @@
-# Used Bootstrap classes for styling, used the grid layout for displaying content. Added some javascript to show animations on hover
+#This is the one with media queries on the Basic Portfolio
